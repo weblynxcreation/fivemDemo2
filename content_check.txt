@@ -1,0 +1,14 @@
+The project contains all required files:
+1. index.html - Entry point with Tailwind and Lucide.
+2. styles.css - Custom styling for logo and glass effects.
+3. main.js - Routing and initialization.
+4. views.js - Template generation for views.
+5. data_store.js - Mock data.
+6. logo_component.js - Specific logo rendering.
+
+The design strictly follows the user goal:
+- Logo: "PROJECT" block white font, "Los Santos" cursive olive font.
+- Theme: Dark, modern, gaming aesthetic with olive accents.
+- Pages: Home, Forum, Store, Rules.
+- Navbar: Fixed, includes Discord link.
+- Tech: Vanilla JS, Tailwind, Lucide.

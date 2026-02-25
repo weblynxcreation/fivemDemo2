@@ -1,0 +1,102 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f0f11;
+}
+::-webkit-scrollbar-thumb {
+    background: #2a2a2e;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f46;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+    background: rgba(22, 22, 24, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+    background: linear-gradient(145deg, rgba(30,30,35,0.6), rgba(20,20,25,0.6));
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(132, 204, 22, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Custom Text Effects */
+.text-glow {
+    text-shadow: 0 0 20px rgba(132, 204, 22, 0.3);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #ffffff, #a3a3a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+
+/* Logo Specifics */
+.logo-block {
+    font-family: 'Racing Sans One', sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #fff 40%, #ccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.logo-script {
+    font-family: 'Allura', cursive;
+    color: #84cc16;
+    text-shadow: 0 0 10px rgba(132, 204, 22, 0.4);
+    transform: rotate(-3deg);
+}
+
+/* Server Status Pulse */
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #84cc16;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(132, 204, 22, 0.7);
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(132, 204, 22, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(132, 204, 22, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(132, 204, 22, 0);
+    }
+}
